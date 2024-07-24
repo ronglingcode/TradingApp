@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <!--<link rel="icon" href="/favicon.ico" />-->
+  <link rel="icon" href="/small_icon.png" />
+  <title>Trading Scripts</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://tradingdata-15425.web.app/watchlist/recentData.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <!--<script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>-->
+  <script src="startup.js"></script>
+  <script type="module" src="tos/tosClient.js"></script>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>
+        <div id="chartContainer0" class="chartContainer">
+          <div id="topbar0" class="topbar">
+            <span id="symbol0"></span>
+            <span class="currentPrice"></span>
+            <span class="currentVolume"></span>
+            [<span class="bid"></span> x <span class="ask"></span>] = <span class="spread">0.1</span>
+            <span class="premktTrend">Netural</span>
+            <!--<span>Algo: </span><span class="algo">Long</span><span class="algo">Short</span>-->
+            <span class="topBarRight2">State:</span>
+            <span class="topBarRight">
+              HOD: <span class="hod"></span>
+              LOD: <span class="lod"></span>
+            </span>
+          </div>
+          <div class="quantityBar">
+            Qty: <input value="%" /><button>%</button><button>100</button> |
+            <span class="currentCandle"><span class="ohlc_o">O:0</span><span class="ohlc_h">H:0</span><span
+                class="ohlc_l">L:0</span><span class="ohlc_c">C:0</span> |</span>
+            <span class="positionCount">pos: 0</span> |
+            <span class="tradingPlans">
+              <span class="tradingPlansLong">
+                <span class="tpImb">Imb</span>
+                <span class="tp1stBreak">1st Brk</span>
+                <span class="tpOpenScalp">OScalp</span>
+
+                <span class="tpOrb">O</span>
+                <span class="tpBreakout">B/O</span>
+
+                <span class="tpRange">Range</span>
+                <span class="tpVcf">VcF</span>
+                <span class="tpVcS">VcS</span>
+                <span class="tpBothFake">Both</span>
+                <span class="tpFalseBreakout">Fakeout</span>
+
+              </span>
+              <span class="tradingPlansShort">
+                <span class="tpImb">Imb</span>
+                <span class="tp1stBreak">1st Brk</span>
+                <span class="tpOpenScalp">OScalp</span>
+                <span class="tpOrb">O</span>
+                <span class="tpBreakout">B/D</span>
+
+                <span class="tpRange">Range</span>
+                <span class="tpVcf">VcF</span>
+                <span class="tpVcS">VcS</span>
+                <span class="tpBothFake">Both</span>
+                <span class="tpFalseBreakout">Fakeout</span>
+
+              </span>
+            </span>
+          </div>
+          <div class="exitOrders">Exits: </div>
+          <div id="chart0" class="tvchart"></div>
+        </div>
+      </td>
+      <td>
+        <div id="chartContainer2" class="chartContainer">
+          <div id="topbar2" class="topbar">
+            <span id="symbol2"></span>
+            <span class="currentPrice"></span>
+            <span class="currentVolume"></span>
+            [<span class="bid"></span> x <span class="ask"></span>] = <span class="spread">0.1</span>
+            <span class="premktTrend">Netural</span>
+            <!--<span>Algo: </span><span class="algo">Long</span><span class="algo">Short</span>-->
+            <span class="topBarRight2">State:</span>
+            <span class="topBarRight">
+              HOD: <span class="hod"></span>
+              LOD: <span class="lod"></span>
+            </span>
+          </div>
+          <div class="quantityBar">
+            Qty: <input value="%" /><button>%</button><button>100</button> |
+            <span class="currentCandle"><span class="ohlc_o">O:0</span><span class="ohlc_h">H:0</span><span
+                class="ohlc_l">L:0</span><span class="ohlc_c">C:0</span> |</span>
+            <span class="positionCount">pos: 0</span> |
+            <span class="tradingPlans">
+              <span class="tradingPlansLong">
+                <span class="tpImb">Imb</span>
+                <span class="tp1stBreak">1st Brk</span>
+                <span class="tpOpenScalp">OScalp</span>
+
+                <span class="tpOrb">O</span>
+                <span class="tpBreakout">B/O</span>
+
+                <span class="tpRange">Range</span>
+                <span class="tpVcf">VcF</span>
+                <span class="tpVcS">VcS</span>
+                <span class="tpBothFake">Both</span>
+                <span class="tpFalseBreakout">Fakeout</span>
+
+              </span>
+              <span class="tradingPlansShort">
+                <span class="tpImb">Imb</span>
+                <span class="tp1stBreak">1st Brk</span>
+                <span class="tpOpenScalp">OScalp</span>
+                <span class="tpOrb">O</span>
+                <span class="tpBreakout">B/D</span>
+
+                <span class="tpRange">Range</span>
+                <span class="tpVcf">VcF</span>
+                <span class="tpVcS">VcS</span>
+                <span class="tpBothFake">Both</span>
+                <span class="tpFalseBreakout">Fakeout</span>
+
+              </span>
+            </span>
+          </div>
+          <div class="exitOrders">Exits: </div>
+          <div id="chart2" class="tvchart"></div>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td>
+        <div id="chartContainer1" class="chartContainer">
+          <div id="topbar1" class="topbar">
+            <span id="symbol1"></span>
+            <span class="currentPrice"></span>
+            <span class="currentVolume"></span>
+            [<span class="bid"></span> x <span class="ask"></span>] = <span class="spread">0.1</span>
+            <span class="premktTrend">Netural</span>
+            <!--<span>Algo: </span><span class="algo">Long</span><span class="algo">Short</span>-->
+            <span class="topBarRight2">State:</span>
+            <span class="topBarRight">
+              HOD: <span class="hod"></span>
+              LOD: <span class="lod"></span>
+            </span>
+          </div>
+          <div class="quantityBar">
+            Qty: <input value="%" /><button>%</button><button>100</button> |
+            <span class="currentCandle"><span class="ohlc_o">O:0</span><span class="ohlc_h">H:0</span><span
+                class="ohlc_l">L:0</span><span class="ohlc_c">C:0</span> |</span>
+            <span class="positionCount">pos: 0</span> |
+            <span class="tradingPlans">
+              <span class="tradingPlansLong">
+                <span class="tpImb">Imb</span>
+                <span class="tp1stBreak">1st Brk</span>
+                <span class="tpOpenScalp">OScalp</span>
+
+                <span class="tpOrb">O</span>
+                <span class="tpBreakout">B/O</span>
+
+                <span class="tpRange">Range</span>
+                <span class="tpVcf">VcF</span>
+                <span class="tpVcS">VcS</span>
+                <span class="tpBothFake">Both</span>
+                <span class="tpFalseBreakout">Fakeout</span>
+
+              </span>
+              <span class="tradingPlansShort">
+                <span class="tpImb">Imb</span>
+                <span class="tp1stBreak">1st Brk</span>
+                <span class="tpOpenScalp">OScalp</span>
+                <span class="tpOrb">O</span>
+                <span class="tpBreakout">B/D</span>
+
+                <span class="tpRange">Range</span>
+                <span class="tpVcf">VcF</span>
+                <span class="tpVcS">VcS</span>
+                <span class="tpBothFake">Both</span>
+                <span class="tpFalseBreakout">Fakeout</span>
+
+              </span>
+            </span>
+          </div>
+          <div class="exitOrders">Exits: </div>
+          <div id="chart1" class="tvchart"></div>
+        </div>
+      </td>
+      <td>
+        <div id="chartContainer3" class="chartContainer">
+          <div id="topbar3" class="topbar">
+            <span id="symbol3"></span>
+            <span class="currentPrice"></span>
+            <span class="currentVolume"></span>
+            [<span class="bid"></span> x <span class="ask"></span>] = <span class="spread">0.1</span>
+            <span class="premktTrend">Netural</span>
+            <!--<span>Algo: </span><span class="algo">Long</span><span class="algo">Short</span>-->
+            <span class="topBarRight2">State:</span>
+            <span class="topBarRight">
+              HOD: <span class="hod"></span>
+              LOD: <span class="lod"></span>
+            </span>
+          </div>
+          <div class="quantityBar">
+            Qty: <input value="%" /><button>%</button><button>100</button> |
+            <span class="currentCandle"><span class="ohlc_o">O:0</span><span class="ohlc_h">H:0</span><span
+                class="ohlc_l">L:0</span><span class="ohlc_c">C:0</span> |</span>
+            <span class="positionCount">pos: 0</span> |
+            <span class="tradingPlans">
+              <span class="tradingPlansLong">
+                <span class="tpImb">Imb</span>
+                <span class="tp1stBreak">1st Brk</span>
+                <span class="tpOpenScalp">OScalp</span>
+
+                <span class="tpOrb">O</span>
+                <span class="tpBreakout">B/O</span>
+
+                <span class="tpRange">Range</span>
+                <span class="tpVcf">VcF</span>
+                <span class="tpVcS">VcS</span>
+                <span class="tpBothFake">Both</span>
+                <span class="tpFalseBreakout">Fakeout</span>
+
+              </span>
+              <span class="tradingPlansShort">
+                <span class="tpImb">Imb</span>
+                <span class="tp1stBreak">1st Brk</span>
+                <span class="tpOpenScalp">OScalp</span>
+                <span class="tpOrb">O</span>
+                <span class="tpBreakout">B/D</span>
+
+                <span class="tpRange">Range</span>
+                <span class="tpVcf">VcF</span>
+                <span class="tpVcS">VcS</span>
+                <span class="tpBothFake">Both</span>
+                <span class="tpFalseBreakout">Fakeout</span>
+
+              </span>
+            </span>
+          </div>
+          <div class="exitOrders">Exits: </div>
+          <div id="chart3" class="tvchart"></div>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <div class="controls">
+    <span style="display: none">
+      <button>B: Buy b/o</button>
+      <button>Shift + B: Buy MKT</button>
+      <button>S: Sell b/o</button>
+      <button>Shift + S: Sell MKT</button>
+      <button>F: Flatten</button>
+      <button>C: Cancel All</button>
+      <button>Q: Cancel Entry</button>
+      <button>T: Move All Stops</button>
+      <button>E: Move Half Stop to Breakeven</button>
+      <button>G: Set Price Target</button>
+      <button>Shit + G: Market Out Half</button>
+      <button>O: Trail stop 5</button>
+      <button>I: Trail stop 15</button>
+      <button>0-9: Adjust Order</button>
+    </span>
+    Total trades: <span id="totalTrades">0</span>
+    <button id="update_account_ui">Update account UI</button>
+    <button id="check_quantity">Check quantity</button>
+    <button id="show_execution">Show executions</button>
+    <button id="export_trades">Export trades</button>
+    <button id="sql">SQL</button>
+    <button id="wave">Check wave</button>
+
+  </div>
+  <div id="logs">
+  </div>
+  <script type="module" src="/dist/index.js"></script>
+  <script type="module" src="main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderFillMessage
+    xmlns="urn:
+    xmlns:beb.ameritrade.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <OrderGroupID>
+        <Firm>150</Firm>
+        <Branch>686</Branch>
+        <ClientKey>686083551</ClientKey>
+        <AccountKey>686083551</AccountKey>
+        <Segment>ngoms</Segment>
+        <SubAccountType>Margin</SubAccountType>
+        <CDDomainID>A000000076931891</CDDomainID>
+    </OrderGroupID>
+    <ActivityTimestamp>2022-12-21T08:32:12.345-06:00</ActivityTimestamp>
+    <Order xsi:type="EquityOrderT">
+        <OrderKey>9996978338</OrderKey>
+        <Security>
+            <CUSIP>654106103</CUSIP>
+            <Symbol>NKE</Symbol>
+            <SecurityType>Common Stock</SecurityType>
+        </Security>
+        <OrderPricing xsi:type="MarketT">
+            <Ask>117.59</Ask>
+            <Bid>117.42</Bid>
+        </OrderPricing>
+        <OrderType>Market</OrderType>
+        <OrderDuration>Day</OrderDuration>
+        <OrderEnteredDateTime>2022-12-21T08:32:10.622-06:00</OrderEnteredDateTime>
+        <OrderInstructions>Buy</OrderInstructions>
+        <OriginalQuantity>30</OriginalQuantity>
+        <AmountIndicator>Shares</AmountIndicator>
+        <Discretionary>false</Discretionary>
+        <OrderSource>Web</OrderSource>
+        <Solicited>false</Solicited>
+        <MarketCode>Normal</MarketCode>
+        <Charges>
+            <Charge>
+                <Type>Commission Override</Type>
+                <Amount>0</Amount>
+            </Charge>
+            <Charge>
+                <Type>SEC Fee</Type>
+                <Amount>0</Amount>
+            </Charge>
+            <Charge>
+                <Type>OR Fee</Type>
+                <Amount>0</Amount>
+            </Charge>
+            <Charge>
+                <Type>TAF Fee</Type>
+                <Amount>0</Amount>
+            </Charge>
+        </Charges>
+        <ClearingID>777</ClearingID>
+        <SettlementInstructions>Normal</SettlementInstructions>
+        <EnteringDevice>AA_lingrong</EnteringDevice>
+    </Order>
+    <OrderCompletionCode>Normal Completion</OrderCompletionCode>
+    <ContraInformation>
+        <Contra>
+            <AccountKey>686083551</AccountKey>
+            <SubAccountType>Margin</SubAccountType>
+            <Broker>CDRG</Broker>
+            <Quantity>30</Quantity>
+            <BadgeNumber/>
+            <ReportTime>2022-12-21T08:32:10.743-06:00</ReportTime>
+        </Contra>
+    </ContraInformation>
+    <SettlementInformation>
+        <Instructions>Normal</Instructions>
+        <Currency>USD</Currency>
+    </SettlementInformation>
+    <ExecutionInformation>
+        <Type>Bought</Type>
+        <Timestamp>2022-12-21T08:32:10.743-06:00</Timestamp>
+        <Quantity>30</Quantity>
+        <ExecutionPrice>117.5464</ExecutionPrice>
+        <AveragePriceIndicator>false</AveragePriceIndicator>
+        <LeavesQuantity>0</LeavesQuantity>
+        <ID>27675007501</ID>
+        <Exchange>OTC - AGENT</Exchange>
+        <BrokerId>CDRG</BrokerId>
+    </ExecutionInformation>
+    <MarkupAmount>0</MarkupAmount>
+    <MarkdownAmount>0</MarkdownAmount>
+    <TradeCreditAmount>-3526.39</TradeCreditAmount>
+    <ConfirmTexts>
+        <ConfirmText/>
+        <ConfirmText/>
+    </ConfirmTexts>
+    <TrueCommCost>0</TrueCommCost>
+    <TradeDate>2022-12-21</TradeDate>
+</OrderFillMessage>

@@ -1,0 +1,251 @@
+[
+    {
+        "AccountID": "210DJA03",
+        "CommissionFee": "0",
+        "ConditionalOrders": [
+            {
+                "Relationship": "OSO",
+                "OrderID": "915104875"
+            },
+            {
+                "Relationship": "OSO",
+                "OrderID": "915104874"
+            }
+        ],
+        "Currency": "USD",
+        "Duration": "GTC",
+        "FilledPrice": "0",
+        "GoodTillDate": "2022-12-16T00:00:00Z",
+        "Legs": [
+            {
+                "ExpirationDate": "2022-12-16T00:00:00Z",
+                "QuantityOrdered": "1",
+                "ExecQuantity": "0",
+                "QuantityRemaining": "0",
+                "BuyOrSell": "Buy",
+                "Symbol": "MESZ22",
+                "Underlying": "MES",
+                "AssetType": "FUTURE"
+            }
+        ],
+        "OrderID": "915104876",
+        "OpenedDateTime": "2022-11-13T20:10:24Z",
+        "OrderType": "StopMarket",
+        "PriceUsedForBuyingPower": "4000.25",
+        "Status": "DON",
+        "StatusDescription": "Queued",
+        "StopPrice": "4000.25",
+        "AdvancedOptions": "STPTRG=STT;OSP=1895683725;",
+        "ConversionRate": "1",
+        "UnbundledRouteFee": "0"
+    },
+    {
+        "AccountID": "210DJA03",
+        "CommissionFee": "0",
+        "ConditionalOrders": [
+            {
+                "Relationship": "OSP",
+                "OrderID": "915104876"
+            },
+            {
+                "Relationship": "BRK",
+                "OrderID": "915104874"
+            }
+        ],
+        "Currency": "USD",
+        "Duration": "GTC",
+        "FilledPrice": "0",
+        "GoodTillDate": "2022-12-16T00:00:00Z",
+        "GroupName": "Brk 8291770413",
+        "Legs": [
+            {
+                "ExpirationDate": "2022-12-16T00:00:00Z",
+                "QuantityOrdered": "1",
+                "ExecQuantity": "0",
+                "QuantityRemaining": "0",
+                "BuyOrSell": "Sell",
+                "Symbol": "MESZ22",
+                "Underlying": "MES",
+                "AssetType": "FUTURE"
+            }
+        ],
+        "OrderID": "915104875",
+        "OpenedDateTime": "2022-11-13T20:10:24Z",
+        "OrderType": "StopMarket",
+        "PriceUsedForBuyingPower": "3998.75",
+        "Status": "DON",
+        "StatusDescription": "Queued",
+        "StopPrice": "3998.5",
+        "AdvancedOptions": "STPTRG=STT;OSO=915104876;BRK=8291770413;",
+        "ConversionRate": "1",
+        "UnbundledRouteFee": "0"
+    },
+    {
+        "AccountID": "210DJA03",
+        "CommissionFee": "0",
+        "ConditionalOrders": [
+            {
+                "Relationship": "OSP",
+                "OrderID": "915104876"
+            },
+            {
+                "Relationship": "BRK",
+                "OrderID": "915104875"
+            }
+        ],
+        "Currency": "USD",
+        "Duration": "GTC",
+        "FilledPrice": "0",
+        "GoodTillDate": "2022-12-16T00:00:00Z",
+        "GroupName": "Brk 8291770413",
+        "Legs": [
+            {
+                "ExpirationDate": "2022-12-16T00:00:00Z",
+                "QuantityOrdered": "1",
+                "ExecQuantity": "0",
+                "QuantityRemaining": "0",
+                "BuyOrSell": "Sell",
+                "Symbol": "MESZ22",
+                "Underlying": "MES",
+                "AssetType": "FUTURE"
+            }
+        ],
+        "LimitPrice": "4004.75",
+        "OrderID": "915104874",
+        "OpenedDateTime": "2022-11-13T20:10:24Z",
+        "OrderType": "Limit",
+        "PriceUsedForBuyingPower": "4004.75",
+        "Status": "DON",
+        "StatusDescription": "Queued",
+        "AdvancedOptions": "OSO=915104876;BRK=8291770413;",
+        "ConversionRate": "1",
+        "UnbundledRouteFee": "0"
+    },
+    {
+        "AccountID": "210DJA03",
+        "CommissionFee": "0",
+        "ClosedDateTime": "2022-11-13T19:15:46Z",
+        "ConditionalOrders": [
+            {
+                "Relationship": "OSO",
+                "OrderID": "915104711"
+            },
+            {
+                "Relationship": "OSO",
+                "OrderID": "915104710"
+            }
+        ],
+        "Currency": "USD",
+        "Duration": "GTC",
+        "FilledPrice": "0",
+        "GoodTillDate": "2022-12-16T00:00:00Z",
+        "Legs": [
+            {
+                "ExpirationDate": "2022-12-16T00:00:00Z",
+                "QuantityOrdered": "1",
+                "ExecQuantity": "0",
+                "QuantityRemaining": "0",
+                "BuyOrSell": "Buy",
+                "Symbol": "MESZ22",
+                "Underlying": "MES",
+                "AssetType": "FUTURE"
+            }
+        ],
+        "OrderID": "915104712",
+        "OpenedDateTime": "2022-11-13T19:15:46Z",
+        "OrderType": "StopMarket",
+        "PriceUsedForBuyingPower": "3998.75",
+        "RejectReason": "future contract MES: order Price = 4000.12000000 is not precise [ 25/100 ]",
+        "Status": "REJ",
+        "StatusDescription": "Rejected",
+        "StopPrice": "4000.12",
+        "AdvancedOptions": "STPTRG=STT;OSP=9521454442;",
+        "ConversionRate": "1",
+        "UnbundledRouteFee": "0"
+    },
+    {
+        "AccountID": "210DJA03",
+        "CommissionFee": "0",
+        "ClosedDateTime": "2022-11-13T19:15:46Z",
+        "ConditionalOrders": [
+            {
+                "Relationship": "OSP",
+                "OrderID": "915104712"
+            },
+            {
+                "Relationship": "BRK",
+                "OrderID": "915104710"
+            }
+        ],
+        "Currency": "USD",
+        "Duration": "GTC",
+        "FilledPrice": "0",
+        "GoodTillDate": "2022-12-16T00:00:00Z",
+        "GroupName": "Brk 4545590338",
+        "Legs": [
+            {
+                "ExpirationDate": "2022-12-16T00:00:00Z",
+                "QuantityOrdered": "1",
+                "ExecQuantity": "0",
+                "QuantityRemaining": "0",
+                "BuyOrSell": "Sell",
+                "Symbol": "MESZ22",
+                "Underlying": "MES",
+                "AssetType": "FUTURE"
+            }
+        ],
+        "OrderID": "915104711",
+        "OpenedDateTime": "2022-11-13T19:15:46Z",
+        "OrderType": "StopMarket",
+        "PriceUsedForBuyingPower": "3998.75",
+        "RejectReason": "future contract MES: order Price = 3998.87000000 is not precise [ 25/100 ]",
+        "Status": "REJ",
+        "StatusDescription": "Rejected",
+        "StopPrice": "3998.87",
+        "AdvancedOptions": "STPTRG=STT;OSO=9521454442;BRK=4545590338;",
+        "ConversionRate": "1",
+        "UnbundledRouteFee": "0"
+    },
+    {
+        "AccountID": "210DJA03",
+        "CommissionFee": "0",
+        "ClosedDateTime": "2022-11-13T19:15:46Z",
+        "ConditionalOrders": [
+            {
+                "Relationship": "OSP",
+                "OrderID": "915104712"
+            },
+            {
+                "Relationship": "BRK",
+                "OrderID": "915104711"
+            }
+        ],
+        "Currency": "USD",
+        "Duration": "GTC",
+        "FilledPrice": "0",
+        "GoodTillDate": "2022-12-16T00:00:00Z",
+        "GroupName": "Brk 4545590338",
+        "Legs": [
+            {
+                "ExpirationDate": "2022-12-16T00:00:00Z",
+                "QuantityOrdered": "1",
+                "ExecQuantity": "0",
+                "QuantityRemaining": "0",
+                "BuyOrSell": "Sell",
+                "Symbol": "MESZ22",
+                "Underlying": "MES",
+                "AssetType": "FUTURE"
+            }
+        ],
+        "LimitPrice": "4003.25",
+        "OrderID": "915104710",
+        "OpenedDateTime": "2022-11-13T19:15:46Z",
+        "OrderType": "Limit",
+        "PriceUsedForBuyingPower": "4003.25",
+        "Status": "CAN",
+        "StatusDescription": "Canceled",
+        "AdvancedOptions": "OSO=9521454442;BRK=4545590338;",
+        "ConversionRate": "1",
+        "UnbundledRouteFee": "0"
+    }
+]

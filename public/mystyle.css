@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, Verdana, Tahoma;
+    margin: 1px;
+}
+
+.controls {
+    padding: 5px 10px 0 10px;
+}
+
+.chartContainer {
+    border: 2px solid gray;
+    margin: 0;
+}
+
+.tvchart {
+    padding: 5px 10px 5px 10px;
+}
+
+.chartContainer {
+    display: none;
+}
+
+.chartContainer.active {
+    border-color: #0091ea;
+}
+
+.topbar {
+    padding: 5px;
+    font-size: 13px;
+}
+
+.active .topbar {
+    background-color: #81d4fa;
+}
+
+.topbar {
+    background-color: #ECEFF1;
+}
+
+.currentPrice {
+    margin: 0 10px;
+}
+
+.topBarRight {
+    float: right;
+    display: none;
+}
+
+.topBarRight2 {
+    float: right;
+    display: none;
+}
+
+.quantityBar {
+    padding: 5px;
+    border-bottom: solid 1px grey;
+    font-size: 13px;
+}
+
+.exitOrders {
+    padding: 5px;
+    border-bottom: solid 1px black;
+    font-size: 13px;
+}
+
+.quantityBar button {
+    margin: 0 2px;
+}
+
+.quantityBar input {
+    width: 60px;
+}
+
+.tradingPlansLong span,
+.tradingPlansShort span {
+    margin: 0 2px;
+    border: solid 1px grey;
+    padding: 1px 2px;
+}
+
+.tradingPlansLong span:hover,
+.tradingPlansShort span:hover {
+    cursor: pointer;
+}
+
+.tradingPlans .long,
+.tradingPlansLong {
+    color: green;
+}
+
+.tradingPlans .short,
+.tradingPlansShort {
+    color: red;
+}
+
+#logs {
+    padding: 2px 10px;
+    font-size: 15px;
+}
+
+#logs .Info {
+    color: #424242;
+}
+
+#logs .Error {
+    color: #c62828;
+}
+
+.ohlc_h {
+    color: green;
+}
+
+.ohlc_l {
+    color: #c62828;
+}
+
+.currentCandle span {
+    margin: 0 2px;
+}
+
+.currentCandle {
+    display: none;
+}
+
+span.algo {
+    margin: 0 2px;
+    border: solid 1px grey;
+    padding: 1px 2px;
+}
+
+.algo.active {
+    font-weight: bold;
+}

@@ -1,0 +1,5 @@
+.snowpack
+.firebase
+build
+node_modules
+coverage
